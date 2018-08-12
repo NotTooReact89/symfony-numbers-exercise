@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calculate now!!{% endblock %}
+
+{% block body %}
+    <style>
+            .random{
+                max-width: 300px;
+                padding: 10px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            input{
+                margin-bottom: 10px;
+            }
+    </style>
+    {{ form_start(form, { 'attr' : { 'class': 'random' } }) }}
+    <h1 class="h3 mb-3 text-center">Calculate now</h1>
+        {%  if result != -1 %}
+            <div class="alert alert-info">The sum is : {{ result }}</div>
+        {% endif %}
+        {% if error is defined %}
+            <div class="alert alert-danger">Please enter positive integer only</div>
+        {%  endif %}
+        {{ form_label(form.random, null,{ 'label_attr': {'class': 'col-sm-12'}} ) }}
+
+        {{ form_widget(form.random, { 'type':'number'}) }}
+        <button class="btn btn-lg btn-primary btn-block" value="first" type="submit" name="first">Calculate ODD Sum</button>
+        <button class="btn btn-lg btn-primary btn-block" value="second" type="submit" name="second">Calculate EVEN Sum</button>
+        <button class="btn btn-lg btn-primary btn-block" value="third" type="submit" name="third">Calculate TOTAL</button>
+        {{form_end(form)}}
+{% endblock %}
