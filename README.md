@@ -2,24 +2,23 @@
 
 Create a simple PHP web application made of an input field and three buttons implementing the
 following behaviour:
-• The input field should only accept positive integers.
-• When button 1 is clicked, return the sum of the odd-indexed digits of the input field.
+- The input field should only accept positive integers.
+- When button 1 is clicked, return the sum of the odd-indexed digits of the input field.
 E.g. Submitting input ‘123456’ would return ‘9’ (= 1 + 3 + 5)
-• When button 2 is clicked, return the sum of the even-indexed digits of the input field.
+- When button 2 is clicked, return the sum of the even-indexed digits of the input field.
 E.g. Submitting input ‘123456’ would return ‘12’ (= 2 + 4 + 6)
-• When button 3 is clicked, sum up all integers up to this number.
+- When button 3 is clicked, sum up all integers up to this number.
 E.g. Submitting input ‘5’ would return ‘15’ (= 1 + 2 + 3 + 4 + 5)
-• All calculations must take place in the backend
+- All calculations must take place in the backend
 
 ## Getting Started
 
-You will need composer to install dependencies. Here you can find tutorials on how to install composer in windows. In mac you can run brew install composer.
+You will need composer to install dependencies. [Here](https://getcomposer.org/doc/00-intro.md) you can find tutorials on how to install composer in windows. In mac you can run brew install composer.
 
 ### Prerequisites
 
 ```
 Composer
-
 ```
 
 ### Installing
@@ -38,11 +37,11 @@ Once you have everything up and running you should be able to see the output in 
 
 ## Built With
 
-* [Symfony](https://symfony.com/) - The php framework used
+- [Symfony](https://symfony.com/) - The php framework used
 
 ## Authors
 
-* **Sharan Dhanala** - *Initial work* - [NotTooReact89](https://github.com/NotTooReact89)
+- **Sharan Dhanala** - [NotTooReact89](https://github.com/NotTooReact89)
 
 ## License
 
